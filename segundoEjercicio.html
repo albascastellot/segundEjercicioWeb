@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>segundoEjercicio</title>
+	</head>
+	
+	<body>
+		<h1> Formulario buscar ruta en Google Maps</h1>
+		<form method="get" action="https://www.google.com/maps/dir">
+			<!-- Campo oculto -->
+			<input type="hidden" name="api" value="1">
+
+			<!-- Campo de texto para el origen -->
+			<label for="origin"> Origen: </label>
+			<input type="text" id="origin" name="origin" placeholder="Lugar,Ciudad, País" required>
+			<br></br>
+
+			<!-- Campo de texto para el destino -->
+			<label for="detination"> Destino: </label>
+			<input type="text" id="destination" name="destination" placeholder="Lugar,Ciudad, País" required>
+			<br></br>
+
+			<!-- Botón para enviar -->
+			<button type="submit"> Obtener ruta </button>
+		</form>
+	</body>
+</html>
